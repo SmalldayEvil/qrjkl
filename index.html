@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>情人节快乐</title>
+    <script src="./rem/rem.js"></script>
+    <link rel="stylesheet" href="./swiper/swiper.min.css">
+    <link rel="stylesheet" href="./jqueryXh/css/jq22.css">
+    <style>
+        img {
+            width: 100%;
+        }
+        .ziti {
+            padding-top: 25px;
+            font-size: 20px;
+            color: #000;
+            text-shadow: 1px 1px 1px #fff,-1px -1px 1px #000;
+            text-align: center;
+        }
+        .zero,.one,.two,.three {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./img/2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/3.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/4.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/5.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/6.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/7.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/8.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/9.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="ziti">
+        <span class="zero">
+                陪伴是最长情的告白
+        </span>
+        <br>
+        <span class="one">
+        张毅❤杨义祯
+
+        </span>
+        <br>
+        <span class="two">
+        情人节快乐
+
+        </span>
+        <br>
+        <span class="three">
+                (づ￣ 3￣)づ
+        
+                </span>
+    </div>
+
+    <script src="./jquery/jquery-3.3.1.js"></script>
+    <script src="./swiper/swiper.min.js"></script>
+    <script src="./jqueryXh/js/snow.js"></script>
+    <script>
+        $(function () {
+            var mySwiper = new Swiper('.swiper-container', {
+                loop: true, // 循环模式选项
+                effect: 'fade',
+                autoplay: {
+                    delay: 2000, //1秒切换一次
+                },
+            })
+            createSnow('', 50);
+            setTimeout(()=>{
+                $('.zero').fadeIn(2000);
+                $('.one').delay(3000).fadeIn(2000);
+                $('.two').delay(6000).fadeIn(2000);
+                $('.three').delay(9000).fadeIn(2000);
+            },5000)
+        })
+    </script>
+</body>
+
+</html>
